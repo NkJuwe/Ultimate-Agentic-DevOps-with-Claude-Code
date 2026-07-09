@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Pravin Mishra's Portfolio Website** — a static HTML/CSS site showcasing cloud/DevOps consulting, courses, and published books. No build process, no backend, no database. This is a DMI (DevOps Micro Internship) learning project designed to practice hosting static sites with Nginx on Ubuntu VMs.
+Static HTML/CSS portfolio website deployed to AWS using S3 and CloudFront, provisioned with Terraform, and automated via GitHub Actions.
 
 ## Project Structure
 
@@ -35,6 +35,29 @@ This must be visible in browser screenshots for DMI submission.
 - Color scheme controlled by CSS in `style.css`
 - Responsive breakpoints for mobile (hamburger menu activates ~768px)
 - Font Awesome 6.5.0 icons embedded via CDN
+
+## Architecture
+
+- Pure HTML5 and CSS3
+- No JavaScript
+- No build step
+- No framework
+
+## Commands
+
+- terraform init
+- terraform plan
+- terraform apply
+
+## Conventions
+
+- All infrastructure changes go through Terraform — never modify AWS resources manually
+- No JavaScript in this project
+- CSS uses mobile-first approach with breakpoints at 900px, 768px, and 600px
+
+## Safety
+
+Never put secrets in this file. No API keys, passwords, or AWS credentials.
 
 ## Deployment
 
