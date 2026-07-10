@@ -36,6 +36,14 @@ This must be visible in browser screenshots for DMI submission.
 - Responsive breakpoints for mobile (hamburger menu activates ~768px)
 - Font Awesome 6.5.0 icons embedded via CDN
 
+### Hero Section Design Requirements
+
+- The hero section must use a dark gradient background.
+- Primary gradient color: `#1a1a2e`
+- Secondary gradient color: `#16213e`
+- Maintain these colors as the source of truth for the hero section design.
+- Do not replace the gradient background with a background image unless explicitly requested.
+
 ## Architecture
 
 - Pure HTML5 and CSS3
