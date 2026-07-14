@@ -6,6 +6,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static HTML/CSS portfolio website deployed to AWS using S3 and CloudFront, provisioned with Terraform, and automated via GitHub Actions.
 
+## Architecture
+
+- Pure HTML5 and CSS3
+- No JavaScript
+- No build step
+- No framework
+
+## Commands
+
+- terraform init
+- terraform plan
+- terraform apply
+
+## Conventions
+
+- All infrastructure changes go through Terraform — never modify AWS resources manually
+- No JavaScript in this project
+- CSS uses mobile-first approach with breakpoints at 900px, 768px, and 600px
+
+## Safety
+
+Never put secrets in this file. No API keys, passwords, or AWS credentials.
+
 ## Project Structure
 
 - **index.html** — Main portfolio landing page with hero, about, services, courses, books, contact sections
@@ -43,29 +66,6 @@ This must be visible in browser screenshots for DMI submission.
 - Secondary gradient color: `#16213e`
 - Maintain these colors as the source of truth for the hero section design.
 - Do not replace the gradient background with a background image unless explicitly requested.
-
-## Architecture
-
-- Pure HTML5 and CSS3
-- No JavaScript
-- No build step
-- No framework
-
-## Commands
-
-- terraform init
-- terraform plan
-- terraform apply
-
-## Conventions
-
-- All infrastructure changes go through Terraform — never modify AWS resources manually
-- No JavaScript in this project
-- CSS uses mobile-first approach with breakpoints at 900px, 768px, and 600px
-
-## Safety
-
-Never put secrets in this file. No API keys, passwords, or AWS credentials.
 
 ## Deployment
 
